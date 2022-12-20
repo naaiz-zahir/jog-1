@@ -28,15 +28,15 @@ function generateText() {
     var jugoQuantity = document.getElementById("jugo-quantity").value;
 
     // Generate the text
-    var text = "I would like to order " + jugoQuantity + " " + jugoFlavor;
+    var text = jugoQuantity + " " + jugoFlavor.toUpperCase();
     if (icecreamFlavor !== "none") {
-        text += " with " + icecreamFlavor + " flavor";
+        text += " with " + icecreamFlavor.toUpperCase() + " ice cream";
     }
     if (addons !== "") {
-        text += " and the following addons: " + addons;
+        text += " and the following addons: " + addons.toUpperCase();
     }
     if (jugoCustom !== "") {
-        text += ". " + jugoCustom;
+        text += ". " + jugoCustom.toUpperCase();
     }
     text += ".";
 

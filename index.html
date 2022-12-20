@@ -18,37 +18,43 @@
     <form id="jugo-form">
       <label for="jugo-flavor">Select a jugo flavor:</label><br>
       <select id="jugo-flavor" name="jugo-flavor">
+        <option value="vanilla">Vanilla</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="cappucinno">Cappucinno</option>
+        <option value="vanilla-coffee">Vanilla Coffee</option>
         <option value="espresso">Espresso</option>
-        <option value="latte">Latte</option>
-        <option value="cappuccino">Cappuccino</option>
-        <option value="cold-brew">Cold Brew</option>
-        <option value="iced-coffee">Iced Coffee</option>
+        <option value="yoghurt">Yoghurt</option>
+        <option value="champagne">Champagne</option>
+        <option value="blueberry">Blueberry</option>
+        <option value="grapes">Grapes</option>
+        <option value="cantaloupe">Cantaloupe</option>
+        <option value="banana">Banana</option>
+        <option value="green-apple">Green Apple</option>
+        <option value="strawberry">Strawberry</option>
+        <option value="oreo-vanilla">OreoVanilla</option>
+        <option value="oreo-choco">OreoChoco</option>
+
       </select><br><br>
   
       <label for="icecream-flavor">Select a ice-cream flavor:</label><br>
       <select id="icecream-flavor" name="icecream-flavor">
         <option value="none">None</option>
         <option value="vanilla">Vanilla</option>
-        <option value="hazelnut">Hazelnut</option>
-        <option value="caramel">Caramel</option>
-        <option value="mocha">Mocha</option>
+        <option value="chocolate">Chocolate</option>
       </select><br><br>
   
       <label for="addons">Select any addons:</label><br>
-      <input type="checkbox" id="addons" name="addons" value="whipped-cream">Whipped cream<br>
-      <input type="checkbox" id="addons" name="addons" value="chocolate-syrup">Chocolate syrup<br>
-      <input type="checkbox" id="addons" name="addons" value="caramel-syrup">Caramel syrup<br>
-      <input type="checkbox" id="addons" name="addons" value="sprinkles">Sprinkles<br><br>
+      <input type="checkbox" id="addons" name="addons" value="jelly">Jelly<br><br><br>
   
       <label for="jugo-custom">Enter any custom requests:</label><br>
-      <textarea id="jugo-custom" name="jugo-custom" rows="4" cols="50"></textarea><br><br>
+      <textarea id="jugo-custom" name="jugo-custom" rows="2" cols="50"></textarea><br><br>
   
       <!-- Quantity input -->
       <label for="jugo-quantity">Enter the quantity:</label><br>
       <input type="number" id="jugo-quantity" name="jugo-quantity" min="1" value="1"><br><br>
   
       <!-- Button for adding more items -->
-      <button type="button" onclick="addItem()">Add More Items</button>
+      <button type="button" onclick="addItem()">Add Item</button>
   
       <!-- Button for completing the order -->
       <button type="button" onclick="completeOrder()">Reset Order</button>

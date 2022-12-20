@@ -33,7 +33,7 @@ function generateText() {
         text += " with " + icecreamFlavor.toUpperCase() + " ice cream";
     }
     if (addons !== "") {
-        text += " and the following addons: " + addons.toUpperCase();
+        text += " and " + addons.toUpperCase();
     }
     if (jugoCustom !== "") {
         text += ". " + jugoCustom.toUpperCase();

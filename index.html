@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Coffee Order Generator</title>
+  <title>Jugo Order Generator</title>
 </head>
 <body>
   <!DOCTYPE html>
   <html>
   <head>
-    <title>Coffee Order Generator</title>
+    <title>Jugo Order Generator</title>
   </head>
   <body>
-    <h1>Coffee Order Generator</h1>
-    <p>Use this tool to generate a text message for ordering coffee with your desired flavors, addons, and custom requests.</p>
+    <h1>Jugo Order Generator</h1>
+    <p>Use this tool to generate a text message for ordering jugo with your desired flavors, addons, and custom requests.</p>
   
-    <!-- Form for selecting coffee options -->
-    <form id="coffee-form">
-      <label for="coffee-type">Select a coffee type:</label><br>
-      <select id="coffee-type" name="coffee-type">
+    <!-- Form for selecting jugo options -->
+    <form id="jugo-form">
+      <label for="jugo-flavor">Select a jugo flavor:</label><br>
+      <select id="jugo-flavor" name="jugo-flavor">
         <option value="espresso">Espresso</option>
         <option value="latte">Latte</option>
         <option value="cappuccino">Cappuccino</option>
@@ -24,8 +24,8 @@
         <option value="iced-coffee">Iced Coffee</option>
       </select><br><br>
   
-      <label for="coffee-flavor">Select a flavor:</label><br>
-      <select id="coffee-flavor" name="coffee-flavor">
+      <label for="icecream-flavor">Select a ice-cream flavor:</label><br>
+      <select id="icecream-flavor" name="icecream-flavor">
         <option value="none">None</option>
         <option value="vanilla">Vanilla</option>
         <option value="hazelnut">Hazelnut</option>
@@ -33,18 +33,18 @@
         <option value="mocha">Mocha</option>
       </select><br><br>
   
-      <label for="coffee-addons">Select any addons:</label><br>
-      <input type="checkbox" id="coffee-addons" name="coffee-addons" value="whipped-cream"> Whipped cream<br>
-      <input type="checkbox" id="coffee-addons" name="coffee-addons" value="chocolate-syrup"> Chocolate syrup<br>
-      <input type="checkbox" id="coffee-addons" name="coffee-addons" value="caramel-syrup"> Caramel syrup<br>
-      <input type="checkbox" id="coffee-addons" name="coffee-addons" value="sprinkles"> Sprinkles<br><br>
+      <label for="addons">Select any addons:</label><br>
+      <input type="checkbox" id="addons" name="addons" value="whipped-cream"> Whipped cream<br>
+      <input type="checkbox" id="addons" name="addons" value="chocolate-syrup"> Chocolate syrup<br>
+      <input type="checkbox" id="addons" name="addons" value="caramel-syrup"> Caramel syrup<br>
+      <input type="checkbox" id="addons" name="addons" value="sprinkles"> Sprinkles<br><br>
   
-      <label for="coffee-custom">Enter any custom requests:</label><br>
-      <textarea id="coffee-custom" name="coffee-custom" rows="4" cols="50"></textarea><br><br>
+      <label for="jugo-custom">Enter any custom requests:</label><br>
+      <textarea id="jugo-custom" name="jugo-custom" rows="4" cols="50"></textarea><br><br>
   
       <!-- Quantity input -->
-      <label for="coffee-quantity">Enter the quantity:</label><br>
-      <input type="number" id="coffee-quantity" name="coffee-quantity" min="1" value="1"><br><br>
+      <label for="jugo-quantity">Enter the quantity:</label><br>
+      <input type="number" id="jugo-quantity" name="jugo-quantity" min="1" value="1"><br><br>
   
       <!-- Button for adding more items -->
       <button type="button" onclick="addItem()">Add More Items</button>

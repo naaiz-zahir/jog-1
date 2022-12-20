@@ -3,38 +3,38 @@ var fullText = "";
 
 // Function for generating the text for a single item
 function generateText() {
-    // Get the selected coffee type
-    var coffeeType = document.getElementById("coffee-type").value;
+    // Get the selected jugo type
+    var jugoFlavor = document.getElementById("jugo-flavor").value;
 
     // Get the selected flavor
-    var coffeeFlavor = document.getElementById("coffee-flavor").value;
+    var icecreamFlavor = document.getElementById("icecream-flavor").value;
 
     // Get the selected addons
-    var coffeeAddons = "";
-    var addons = document.getElementsByName("coffee-addons");
+    var addons = "";
+    var addons = document.getElementsByName("addons");
     for (var i = 0; i < addons.length; i++) {
         if (addons[i].checked) {
-            coffeeAddons += addons[i].value + ", ";
+            addons += addons[i].value + ", ";
         }
     }
-    coffeeAddons = coffeeAddons.slice(0, -2); // remove the last comma and space
+    addons = addons.slice(0, -2); // remove the last comma and space
 
     // Get the custom requests
-    var coffeeCustom = document.getElementById("coffee-custom").value;
+    var jugoCustom = document.getElementById("jugo-custom").value;
 
     // Get the quantity
-    var coffeeQuantity = document.getElementById("coffee-quantity").value;
+    var jugoQuantity = document.getElementById("jugo-quantity").value;
 
     // Generate the text
-    var text = "I would like to order " + coffeeQuantity + " " + coffeeType;
-    if (coffeeFlavor !== "none") {
-        text += " with " + coffeeFlavor + " flavor";
+    var text = "I would like to order " + jugoQuantity + " " + jugoFlavor;
+    if (icecreamFlavor !== "none") {
+        text += " with " + icecreamFlavor + " flavor";
     }
-    if (coffeeAddons !== "") {
-        text += " and the following addons: " + coffeeAddons;
+    if (addons !== "") {
+        text += " and the following addons: " + addons;
     }
-    if (coffeeCustom !== "") {
-        text += ". " + coffeeCustom;
+    if (jugoCustom !== "") {
+        text += ". " + jugoCustom;
     }
     text += ".";
 
@@ -56,7 +56,7 @@ function addItem() {
 // Function for completing the order
 function completeOrder() {
     // Clear the form
-    document.getElementById("coffee-form").reset();
+    document.getElementById("jugo-form").reset();
 
     // Clear the full text of the order
     fullText = "";

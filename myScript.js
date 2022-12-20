@@ -11,13 +11,15 @@ function generateText() {
 
     // Get the selected addons
     var addons = "";
-    var addons = document.getElementsByName("addons");
-    for (var i = 0; i < addons.length; i++) {
-        if (addons[i].checked) {
-            addons += addons[i].value + ", ";
+    var addonsElements = document.getElementsByName("addons");
+    for (var i = 0; i < addonsElements.length; i++) {
+        if (addonsElements[i].checked) {
+            addons += addonsElements[i].value + ", ";
         }
     }
-    addons = addons.slice(0, -2); // remove the last comma and space
+    if (addons !== "") {
+        addons = addons.slice(0, -2); // remove the last comma and space
+    }
 
     // Get the custom requests
     var jugoCustom = document.getElementById("jugo-custom").value;

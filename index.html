@@ -8,6 +8,7 @@
   <html>
   <head>
     <title>Jugo Order Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <h1>Jugo Order Generator</h1>
@@ -34,10 +35,10 @@
       </select><br><br>
   
       <label for="addons">Select any addons:</label><br>
-      <input type="checkbox" id="addons" name="addons" value="whipped-cream"> Whipped cream<br>
-      <input type="checkbox" id="addons" name="addons" value="chocolate-syrup"> Chocolate syrup<br>
-      <input type="checkbox" id="addons" name="addons" value="caramel-syrup"> Caramel syrup<br>
-      <input type="checkbox" id="addons" name="addons" value="sprinkles"> Sprinkles<br><br>
+      <input type="checkbox" id="addons" name="addons" value="whipped-cream">Whipped cream<br>
+      <input type="checkbox" id="addons" name="addons" value="chocolate-syrup">Chocolate syrup<br>
+      <input type="checkbox" id="addons" name="addons" value="caramel-syrup">Caramel syrup<br>
+      <input type="checkbox" id="addons" name="addons" value="sprinkles">Sprinkles<br><br>
   
       <label for="jugo-custom">Enter any custom requests:</label><br>
       <textarea id="jugo-custom" name="jugo-custom" rows="4" cols="50"></textarea><br><br>
@@ -50,10 +51,7 @@
       <button type="button" onclick="addItem()">Add More Items</button>
   
       <!-- Button for completing the order -->
-      <button type="button" onclick="completeOrder()">Order Complete</button>
-  
-      <!-- Button for generating text -->
-      <button type="button" onclick="generateText()">Generate Text</button>
+      <button type="button" onclick="completeOrder()">Reset Order</button>
     </form>
 
   <!-- Textarea for displaying generated text -->

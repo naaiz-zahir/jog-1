@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coffee Order Generator</title>
+</head>
+<body>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Coffee Order Generator</title>
+  </head>
+  <body>
+    <h1>Coffee Order Generator</h1>
+    <p>Use this tool to generate a text message for ordering coffee with your desired flavors, addons, and custom requests.</p>
+  
+    <!-- Form for selecting coffee options -->
+    <form id="coffee-form">
+      <label for="coffee-type">Select a coffee type:</label><br>
+      <select id="coffee-type" name="coffee-type">
+        <option value="espresso">Espresso</option>
+        <option value="latte">Latte</option>
+        <option value="cappuccino">Cappuccino</option>
+        <option value="cold-brew">Cold Brew</option>
+        <option value="iced-coffee">Iced Coffee</option>
+      </select><br><br>
+  
+      <label for="coffee-flavor">Select a flavor:</label><br>
+      <select id="coffee-flavor" name="coffee-flavor">
+        <option value="none">None</option>
+        <option value="vanilla">Vanilla</option>
+        <option value="hazelnut">Hazelnut</option>
+        <option value="caramel">Caramel</option>
+        <option value="mocha">Mocha</option>
+      </select><br><br>
+  
+      <label for="coffee-addons">Select any addons:</label><br>
+      <input type="checkbox" id="coffee-addons" name="coffee-addons" value="whipped-cream"> Whipped cream<br>
+      <input type="checkbox" id="coffee-addons" name="coffee-addons" value="chocolate-syrup"> Chocolate syrup<br>
+      <input type="checkbox" id="coffee-addons" name="coffee-addons" value="caramel-syrup"> Caramel syrup<br>
+      <input type="checkbox" id="coffee-addons" name="coffee-addons" value="sprinkles"> Sprinkles<br><br>
+  
+      <label for="coffee-custom">Enter any custom requests:</label><br>
+      <textarea id="coffee-custom" name="coffee-custom" rows="4" cols="50"></textarea><br><br>
+  
+      <!-- Quantity input -->
+      <label for="coffee-quantity">Enter the quantity:</label><br>
+      <input type="number" id="coffee-quantity" name="coffee-quantity" min="1" value="1"><br><br>
+  
+      <!-- Button for adding more items -->
+      <button type="button" onclick="addItem()">Add More Items</button>
+  
+      <!-- Button for completing the order -->
+      <button type="button" onclick="completeOrder()">Order Complete</button>
+  
+      <!-- Button for generating text -->
+      <button type="button" onclick="generateText()">Generate Text</button>
+    </form>
+
+  <!-- Textarea for displaying generated text -->
+  <br><br>
+  <label for="generated-text">Generated Text:</label><br>
+  <textarea id="generated-text" rows="4" cols="50" readonly></textarea><br><br>
+
+  <script src="myScript.js"></script>
+</body>
+</html>

@@ -57,12 +57,6 @@ function addItem() {
     //fullText += "\n" + itemText;
     fullText += itemText + "\n";
 
-    // if (document.getElementById("generated-text").value = " ") {
-    //    fullText += itemText;
-    // } else {
-    //    fullText += "\n" + itemText;
-    //}
-
     // Display the full text in the textarea
     document.getElementById("generated-text").value = fullText;
 }
@@ -79,6 +73,7 @@ function completeOrder() {
     document.getElementById("generated-text").value = "";
 }
 
+// Function to copy text to clipboard
 function copy() {
     let textarea = document.getElementById("generated-text");
     textarea.select();

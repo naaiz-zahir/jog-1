@@ -33,7 +33,12 @@ function generateText() {
         text += " with " + icecreamFlavor.toUpperCase() + " ice cream";
     }
     if (addons !== "") {
-        text += " and " + addons.toUpperCase();
+        if (icecreamFlavor == "none") {
+            text += " with " + addons.toUpperCase();
+        } else {
+            text += " and " + addons.toUpperCase();
+        }
+        // text += " and " + addons.toUpperCase();
     }
     if (jugoCustom !== "") {
         text += ". " + jugoCustom.toUpperCase();
@@ -49,7 +54,14 @@ function addItem() {
     var itemText = generateText();
 
     // Add the text to the full text of the order
-    fullText += "\n" + itemText;
+    //fullText += "\n" + itemText;
+    fullText += itemText + "\n";
+
+    // if (document.getElementById("generated-text").value = " ") {
+    //    fullText += itemText;
+    // } else {
+    //    fullText += "\n" + itemText;
+    //}
 
     // Display the full text in the textarea
     document.getElementById("generated-text").value = fullText;
@@ -65,4 +77,10 @@ function completeOrder() {
 
     // Clear the textarea
     document.getElementById("generated-text").value = "";
+}
+
+function copy() {
+    let textarea = document.getElementById("generated-text");
+    textarea.select();
+    document.execCommand("copy");
 }

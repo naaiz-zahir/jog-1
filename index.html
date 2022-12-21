@@ -36,7 +36,7 @@
 
       </select><br><br>
   
-      <label for="icecream-flavor">Select a ice-cream flavor:</label><br>
+      <label for="icecream-flavor">Select a ice cream flavor:</label><br>
       <select id="icecream-flavor" name="icecream-flavor">
         <option value="none">None</option>
         <option value="vanilla">Vanilla</option>
@@ -57,13 +57,20 @@
       <button type="button" onclick="addItem()">Add Item</button>
   
       <!-- Button for completing the order -->
-      <button type="button" onclick="completeOrder()">Reset Order</button>
+      <button type="button" onclick="completeOrder()">Reset Form</button>
+
+      <br><br>
+      <label for="generated-text">Generated Text:</label><br>
+      <textarea id="generated-text" rows="4" cols="50" readonly></textarea>
+
+      <button onclick="copyText()">Copy</button>
     </form>
 
-  <!-- Textarea for displaying generated text -->
+  <!-- Textarea for displaying generated text
   <br><br>
   <label for="generated-text">Generated Text:</label><br>
   <textarea id="generated-text" rows="4" cols="50" readonly></textarea><br><br>
+-->
 
   <script src="myScript.js"></script>
 </body>
